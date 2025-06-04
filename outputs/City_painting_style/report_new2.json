@@ -1,0 +1,24 @@
+{
+    "total_time": 12576.58261346817,
+    "iterations": 1000,
+    "device": "cuda",
+    "final_losses": {
+        "content_loss": 8.171785354614258,
+        "style_loss": 0.08677694946527481,
+        "tv_loss": 0.2885136008262634,
+        "total_loss": 12.654890060424805
+    },
+    "args": {
+        "noise_ratio": 0.3,
+        "content_image": "./imgs/city.jpg",
+        "style_image": "./imgs/freehand.jpg",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 50.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 1000,
+        "imsize": 256,
+        "save_freq": 200,
+        "learning_rate": 1.0,
+        "save_path": "./outputs/"
+    }
+}

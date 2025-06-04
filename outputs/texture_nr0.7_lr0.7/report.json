@@ -1,0 +1,27 @@
+{
+    "total_time": 1146.3271145820618,
+    "iterations": 1000,
+    "device": "cuda",
+    "style_name": "texture",
+    "noise_ratio": 0.7,
+    "learning_rate": 0.7,
+    "final_losses": {
+        "content_loss": 8.287917137145996,
+        "style_loss": 0.4862302243709564,
+        "tv_loss": 0.5062584280967712,
+        "total_loss": 13.403347969055176
+    },
+    "args": {
+        "noise_ratio": 0.7,
+        "content_image": "./imgs/photo.jpg",
+        "style_image": "./imgs/texture.png",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 10.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 1000,
+        "imsize": 256,
+        "save_freq": 250,
+        "learning_rate": 0.7,
+        "save_path": "outputs"
+    }
+}

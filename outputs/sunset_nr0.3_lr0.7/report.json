@@ -1,0 +1,27 @@
+{
+    "total_time": 1516.306514263153,
+    "iterations": 1000,
+    "device": "cuda",
+    "style_name": "sunset",
+    "noise_ratio": 0.3,
+    "learning_rate": 0.7,
+    "final_losses": {
+        "content_loss": 9.6023530960083,
+        "style_loss": 0.0743924081325531,
+        "tv_loss": 0.33473408222198486,
+        "total_loss": 13.489340782165527
+    },
+    "args": {
+        "noise_ratio": 0.3,
+        "content_image": "./imgs/golden_gate.jpg",
+        "style_image": "./imgs/sunset.jpeg",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 50.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 1000,
+        "imsize": 256,
+        "save_freq": 250,
+        "learning_rate": 0.7,
+        "save_path": "outputs"
+    }
+}

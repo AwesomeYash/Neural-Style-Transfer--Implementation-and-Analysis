@@ -1,0 +1,13 @@
+{
+    "noise_ratio": 0.3,
+    "content_image": "./imgs/hd_image.jpg",
+    "style_image": "./imgs/texture.png",
+    "content_loss_weight": 1.0,
+    "style_loss_weight": 50.0,
+    "tv_loss_weight": 0.5,
+    "iteration": 1000,
+    "imsize": 256,
+    "save_freq": 200,
+    "learning_rate": 1.0,
+    "save_path": "./outputs/"
+}

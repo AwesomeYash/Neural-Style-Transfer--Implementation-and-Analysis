@@ -1,0 +1,27 @@
+{
+    "total_time": 966.0649871826172,
+    "iterations": 500,
+    "device": "cuda",
+    "style_name": "bridge",
+    "noise_ratio": 0.7,
+    "learning_rate": 0.4,
+    "final_losses": {
+        "content_loss": 4.514249801635742,
+        "style_loss": 0.31116703152656555,
+        "tv_loss": 0.3707660734653473,
+        "total_loss": 7.81130313873291
+    },
+    "args": {
+        "noise_ratio": 0.7,
+        "content_image": "C:\\\\Users\\\\yashr\\\\Desktop\\\\NEU\\\\Semester 2\\\\PRCV\\\\Final Project\\\\imgs\\\\forest.jpg",
+        "style_image": "C:\\\\Users\\\\yashr\\\\Desktop\\\\NEU\\\\Semester 2\\\\PRCV\\\\Final Project\\\\imgs\\\\bridge.jpg",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 10.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 500,
+        "imsize": 256,
+        "save_freq": 100,
+        "learning_rate": 0.4,
+        "save_path": "outputs"
+    }
+}

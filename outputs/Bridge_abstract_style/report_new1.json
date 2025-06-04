@@ -1,0 +1,24 @@
+{
+    "total_time": 3792.102403640747,
+    "iterations": 1000,
+    "device": "cuda",
+    "final_losses": {
+        "content_loss": 8.743861198425293,
+        "style_loss": 0.07177099585533142,
+        "tv_loss": 0.4957827627658844,
+        "total_loss": 12.580302238464355
+    },
+    "args": {
+        "noise_ratio": 0.3,
+        "content_image": "C:\\\\Users\\\\yashr\\\\Desktop\\\\neural_style_transfer\\\\imgs\\\\golden_gate.jpg",
+        "style_image": "C:\\\\Users\\\\yashr\\\\Desktop\\\\neural_style_transfer\\\\imgs\\\\Abstract.jpg",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 50.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 1000,
+        "imsize": 512,
+        "save_freq": 200,
+        "learning_rate": 1.0,
+        "save_path": "./outputs/"
+    }
+}

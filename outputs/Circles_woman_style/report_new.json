@@ -1,0 +1,24 @@
+{
+    "total_time": 3642.578134536743,
+    "iterations": 800,
+    "device": "cuda",
+    "final_losses": {
+        "content_loss": 38.80841064453125,
+        "style_loss": 0.10231004655361176,
+        "tv_loss": 1.116640329360962,
+        "total_loss": 44.48223114013672
+    },
+    "args": {
+        "noise_ratio": 0.3,
+        "content_image": "C:\\\\Users\\\\yashr\\\\Desktop\\\\neural_style_transfer\\\\imgs\\\\woman.jpg",
+        "style_image": "C:\\\\Users\\\\yashr\\\\Desktop\\\\neural_style_transfer\\\\imgs\\\\circle.jpg",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 50.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 800,
+        "imsize": 512,
+        "save_freq": 200,
+        "learning_rate": 1.0,
+        "save_path": "./outputs/"
+    }
+}

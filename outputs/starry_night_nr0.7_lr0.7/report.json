@@ -1,0 +1,27 @@
+{
+    "total_time": 1085.7271358966827,
+    "iterations": 1000,
+    "device": "cuda",
+    "style_name": "starry_night",
+    "noise_ratio": 0.7,
+    "learning_rate": 0.7,
+    "final_losses": {
+        "content_loss": 6.0351972579956055,
+        "style_loss": 0.241347998380661,
+        "tv_loss": 0.5430837869644165,
+        "total_loss": 8.720218658447266
+    },
+    "args": {
+        "noise_ratio": 0.7,
+        "content_image": "./imgs/photo.jpg",
+        "style_image": "./imgs/starry_night.jpg",
+        "content_loss_weight": 1.0,
+        "style_loss_weight": 10.0,
+        "tv_loss_weight": 0.5,
+        "iteration": 1000,
+        "imsize": 256,
+        "save_freq": 250,
+        "learning_rate": 0.7,
+        "save_path": "outputs"
+    }
+}
