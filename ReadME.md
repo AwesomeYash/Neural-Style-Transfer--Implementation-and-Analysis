@@ -11,8 +11,8 @@ This project implements a PyTorch-based Neural Style Transfer algorithm based on
 - **Images:** [https://northeastern-my.sharepoint.com/:f:/g/personal/ranka_pr_northeastern_edu/Eu-dIClJ9shEm0qo9Qs8oLIBo05Tmf3W1uSISM1jO9QXBg?e=pKD9eM]
 - **Outputs:** [https://northeastern-my.sharepoint.com/:f:/g/personal/ranka_pr_northeastern_edu/EumQEPT9f7xOpbYX0k0eJ9IByUB7AwPh6fbNLuK1IGAHzA?e=Fz2EFj]
 
-## Project Structure
 
+## Project Structure
 ```
 Submission Files
 │
@@ -37,7 +37,6 @@ Submission Files
 ```
 
 ## Requirements
-
 - Python 3.6+
 - PyTorch 1.8+
 - torchvision
@@ -53,9 +52,7 @@ pip install torch torchvision numpy matplotlib pillow tqdm
 ```
 
 ## Usage
-
 ### Basic Style Transfer
-
 To perform style transfer with default parameters:
 
 ```bash
@@ -63,7 +60,6 @@ python main.py --content_image ./imgs/your_content.jpg --style_image ./imgs/your
 ```
 
 ### Advanced Options
-
 The implementation supports various parameters for fine-tuning the style transfer process:
 
 ```bash
@@ -81,7 +77,6 @@ python main.py --content_image ./imgs/your_content.jpg \
 ```
 
 ### Parameter Description
-
 - `--noise_ratio`: Controls the initialization of the input image (0.0 = noise, 1.0 = content image)
 - `--learning_rate`: Learning rate for the L-BFGS optimizer
 - `--content_loss_weight`: Weight for content loss component
@@ -93,7 +88,6 @@ python main.py --content_image ./imgs/your_content.jpg \
 - `--save_path`: Directory to save result images
 
 ### Running with Multiple Parameter Combinations
-
 To experiment with different parameter combinations:
 
 ```bash
@@ -107,7 +101,6 @@ python run_parameters.py --content_image ./imgs/your_content.jpg \
 This will run neural style transfer with various combinations of noise ratios and learning rates, saving the results in separate folders.
 
 ### Analyzing Results
-
 To analyze loss convergence and generate visualizations:
 
 ```bash
@@ -116,13 +109,10 @@ python analysis.py --loss_file ./outputs/{style}_nr{noise_ratio}_lr{learning_rat
 ```
 
 ## Implementation Details
-
 ### Feature Extraction
-
 The implementation uses the pre-trained VGG19 network as a feature extractor, following the approach described by Gatys et al. Content representation is captured from layer `relu4_2`, while style representation incorporates multiple layers (`relu1_1` through `relu5_1`).
 
 ### Loss Functions
-
 The implementation incorporates three key loss components:
 
 1. **Content Loss**: Mean squared error between content feature representations
@@ -130,25 +120,20 @@ The implementation incorporates three key loss components:
 3. **Total Variation Loss**: Regularization term to ensure spatial smoothness
 
 ### Optimization Process
-
 The optimization employs L-BFGS with a closure function for gradient updates. The process iteratively refines the input image to minimize the weighted combination of content, style, and total variation losses.
 
 ## Parameter Effects
-
 ### Noise Ratio
-
 - **Higher noise ratios (0.7+)**: Preserve more content structure but may result in less pronounced stylization
 - **Medium noise ratios (0.4-0.6)**: Balance content preservation and style adoption
 - **Lower noise ratios (0.3-)**: Produce more creative stylizations but may compromise content structure
 
 ### Learning Rate
-
 - **Higher learning rates (0.8+)**: Achieve faster initial stylization but may introduce artifacts
 - **Medium learning rates (0.5-0.7)**: Balance exploration and refinement of style elements
 - **Lower learning rates (0.4-)**: Produce smoother, more refined results but require more iterations
 
 ## Results
-
 The outputs directory contains styled images with filenames indicating the parameters used. For each parameter combination, the following files are generated:
 
 - `{style}_nr{noise_ratio}_lr{learning_rate}.png`: Final stylized image
@@ -157,7 +142,6 @@ The outputs directory contains styled images with filenames indicating the param
 - `{style}_nr{noise_ratio}_lr{learning_rate}/report.json`: Summary of the run parameters and results
 
 ## Acknowledgments
-
 This implementation is based on the following papers:
 
 - Gatys, L. A., Ecker, A. S., & Bethge, M. (2016). Image style transfer using convolutional neural networks.
